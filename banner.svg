@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#1b1446"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe066"/>
+      <stop offset="1" stop-color="#ff9f1c"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#9ad1ff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <!-- circuit traces -->
+  <g fill="none" stroke="#4cc9f0" stroke-opacity="0.35" stroke-width="3" stroke-linecap="round">
+    <path d="M0 290H140l30-30h120"/>
+    <path d="M1200 70H1060l-30 30H930"/>
+    <path d="M1200 300h-110l-25-25h-90"/>
+  </g>
+  <g fill="#4cc9f0" fill-opacity="0.6">
+    <circle cx="290" cy="260" r="6"/><circle cx="930" cy="100" r="6"/><circle cx="975" cy="275" r="6"/>
+  </g>
+  <!-- resistor zigzag -->
+  <path d="M120 120h60l15-30 30 60 30-60 30 60 30-60 30 60 15-30h60" fill="none" stroke="#f72585" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" opacity="0.85"/>
+  <!-- bolt -->
+  <path transform="translate(60,-40)" filter="url(#glow)" d="M1010 150l-60 95h42l-20 75 70-105h-44l26-65z" fill="url(#bolt)"/>
+  <text x="120" y="225" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="76" font-weight="800" fill="url(#title)">The Ohm Calculator</text>
+  <text x="122" y="270" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#c7d2fe">Your favorite calculator when you are too upset to do it yourself.</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="22" font-weight="700">
+    <rect x="120" y="295" width="130" height="40" rx="20" fill="#4cc9f0" fill-opacity="0.15" stroke="#4cc9f0"/>
+    <text x="185" y="322" text-anchor="middle" fill="#4cc9f0">V = I·R</text>
+    <rect x="265" y="295" width="130" height="40" rx="20" fill="#f72585" fill-opacity="0.15" stroke="#f72585"/>
+    <text x="330" y="322" text-anchor="middle" fill="#f72585">R = V/I</text>
+    <rect x="410" y="295" width="130" height="40" rx="20" fill="#ffd166" fill-opacity="0.15" stroke="#ffd166"/>
+    <text x="475" y="322" text-anchor="middle" fill="#ffd166">I = V/R</text>
+  </g>
+</svg>

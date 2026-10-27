@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="380" viewBox="0 0 420 380">
+  <rect width="420" height="380" rx="20" fill="#0b1020"/>
+  <path d="M210 40L380 330H40z" fill="#1b1446" stroke="#9ad1ff" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="125" y1="185" x2="295" y2="185" stroke="#9ad1ff" stroke-width="4"/>
+  <line x1="210" y1="185" x2="210" y2="330" stroke="#9ad1ff" stroke-width="4"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="210" y="155" font-size="64" fill="#4cc9f0">V</text>
+    <text x="150" y="285" font-size="58" fill="#ffd166">I</text>
+    <text x="268" y="285" font-size="58" fill="#f72585">R</text>
+  </g>
+  <text x="210" y="365" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#c7d2fe" text-anchor="middle">Cover the value you want · read the rest</text>
+</svg>
