@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="The Ohm Calculator" width="100%">
+<img src="banner.svg" alt="The Ohm Calculator" width="100%">
 
 <br>
 
@@ -35,7 +35,7 @@
 <table>
 <tr>
 <td width="45%" align="center">
-<img src="assets/ohm-triangle.svg" alt="Ohm's Law triangle" width="300">
+<img src="ohm-triangle.svg" alt="Ohm's Law triangle" width="300">
 </td>
 <td>
 
